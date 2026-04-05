@@ -69,6 +69,87 @@ const projectsData = [
             'Added hotel suggestions, maps support, and PDF export',
             'Showcased a modular and deployment-ready AI product workflow'
         ]
+    },
+    {
+        id: 5,
+        name: 'Assured Contract Farming System for Stable Market Access',
+        company: 'FarmConnect',
+        duration: 'Dec 2025 - Feb 2026',
+        category: 'fullstack',
+        featured: true,
+        description: 'A full-stack Android application that connects farmers and buyers for crop listings, price negotiation, contracts, and dispute handling.',
+        detailedDescription: 'Built FarmConnect as a native Android marketplace for direct farmer-to-buyer interaction with image-based crop listings, in-app chat, contract management, and a dispute resolution workflow. The system combines a Kotlin Android frontend with a Node.js and TypeScript REST API backend, SQLite data storage, JWT-based authentication, role-based access control, Firebase Cloud Messaging, and secure media uploads.',
+        technologies: ['Kotlin', 'Android Studio', 'Node.js', 'TypeScript', 'SQLite', 'JWT', 'Firebase Cloud Messaging', 'REST API'],
+        achievements: [
+            'Developed a native Kotlin Android app with a modular mobile architecture',
+            'Built real-time buyer and farmer communication with push notifications',
+            'Implemented JWT authentication and role-based access for Farmers, Buyers, and Admins',
+            'Created crop image uploads, contract workflows, and dispute resolution features'
+        ]
+    },
+    {
+        id: 6,
+        name: 'BookBridge',
+        company: 'Android Application',
+        duration: 'Jan 2025 - Mar 2025',
+        category: 'fullstack',
+        description: 'A peer-to-peer book marketplace for buying and selling books with secure login, listings, search filters, and digital access support.',
+        detailedDescription: 'Built BookBridge as an Android marketplace that helps users list, discover, and purchase books through a streamlined mobile experience. The app includes secure authentication, searchable listings, filters for easier discovery, and an in-app PDF viewer with download support for digital books.',
+        technologies: ['Android', 'Kotlin', 'Authentication', 'Search Filters', 'PDF Viewer', 'Mobile UI'],
+        achievements: [
+            'Built secure login and user-friendly listing flows for buyers and sellers',
+            'Added search and filtering features for faster book discovery',
+            'Integrated an in-app PDF viewer for seamless reading experience',
+            'Enabled PDF download support for digital book access'
+        ]
+    },
+    {
+        id: 7,
+        name: 'Expense Tracker Using Python',
+        company: 'Personal Project',
+        duration: 'Mar 2025 - May 2025',
+        category: 'data',
+        description: 'A desktop finance tracker for managing expenses, monitoring balances, and visualizing spending patterns.',
+        detailedDescription: 'Developed a personal finance application using Tkinter and ttkbootstrap to record expenses, save and load data, and visualize spending through charts. The project focuses on practical budget management with automatic balance updates, theme switching, analytics, and CSV export for reporting.',
+        technologies: ['Python', 'Tkinter', 'ttkbootstrap', 'CSV Export', 'Data Visualization', 'Desktop Application'],
+        achievements: [
+            'Built expense add, save, and load workflows for daily finance tracking',
+            'Implemented automatic balance updates for better spending awareness',
+            'Added pie-chart analytics to visualize expense distribution',
+            'Included theme switching and CSV export for usability and reporting'
+        ]
+    },
+    {
+        id: 8,
+        name: 'Sudoku Solver Using Java',
+        company: 'Academic Project',
+        duration: 'Sep 2024 - Nov 2024',
+        category: 'fullstack',
+        description: 'A Java-based 4x4 Sudoku solver with a Swing interface and backtracking logic for interactive puzzle solving.',
+        detailedDescription: 'Created a Sudoku solver that computes valid solutions for 4x4 puzzles using a backtracking algorithm. The project pairs algorithmic problem solving with a Swing-based graphical interface so users can enter values, trigger the solver, and view results interactively.',
+        technologies: ['Java', 'Swing', 'Backtracking', 'Algorithms', 'Desktop UI'],
+        achievements: [
+            'Implemented a backtracking algorithm to solve valid 4x4 Sudoku inputs',
+            'Designed a Swing interface for easy user interaction',
+            'Displayed computed puzzle results clearly within the UI',
+            'Combined algorithm design with practical desktop application development'
+        ]
+    },
+    {
+        id: 9,
+        name: 'AirWise AQI Website',
+        company: 'Web Project',
+        duration: 'Aug 2024 - Oct 2025',
+        category: 'data',
+        description: 'A responsive website that displays real-time air quality and weather insights using live API data.',
+        detailedDescription: 'Built AirWise as a real-time AQI and weather dashboard using the OpenWeatherMap API. The website presents live air quality, temperature, humidity, and wind information through a responsive HTML, CSS, and JavaScript interface designed for quick environmental insights.',
+        technologies: ['HTML', 'CSS', 'JavaScript', 'OpenWeatherMap API', 'Responsive Design', 'Weather Data'],
+        achievements: [
+            'Integrated live AQI and weather data from the OpenWeatherMap API',
+            'Displayed temperature, humidity, wind, and air quality insights in one dashboard',
+            'Designed a responsive interface for desktop and mobile viewing',
+            'Turned raw environmental data into a clear and accessible web experience'
+        ]
     }
 ];
 
@@ -76,13 +157,19 @@ const technicalSkills = [
     { name: 'Python', proficiency: 92, years: 3 },
     { name: 'Java', proficiency: 74, years: 2 },
     { name: 'JavaScript', proficiency: 85, years: 2 },
+    { name: 'TypeScript', proficiency: 76, years: 1 },
+    { name: 'Node.js', proficiency: 78, years: 1 },
     { name: 'React', proficiency: 82, years: 2 },
     { name: 'Flutter', proficiency: 78, years: 1 },
+    { name: 'Kotlin', proficiency: 80, years: 1 },
+    { name: 'Android Dev', proficiency: 82, years: 1 },
     { name: 'HTML5', proficiency: 88, years: 3 },
     { name: 'CSS', proficiency: 86, years: 3 },
     { name: 'Flask', proficiency: 76, years: 1 },
     { name: 'Pandas', proficiency: 84, years: 2 },
     { name: 'NumPy', proficiency: 80, years: 2 },
+    { name: 'SQLite', proficiency: 75, years: 1 },
+    { name: 'Firebase', proficiency: 77, years: 1 },
     { name: 'Power BI', proficiency: 72, years: 1 },
     { name: 'API Integration', proficiency: 82, years: 2 }
 ];
@@ -159,12 +246,12 @@ const experienceData = [
         location: 'Mumbai, India',
         category: 'technical',
         logo: 'P',
-        description: 'Designed and developed AI-centered portfolio projects spanning resume analysis, developer profiling, nutrition analytics, and travel planning.',
+        description: 'Designed and developed portfolio projects spanning AI tools, mobile apps, analytics systems, desktop utilities, and problem-solving applications.',
         responsibilities: [
-            'Built end-to-end applications with Python and Streamlit',
-            'Worked with NLP, structured outputs, and recommendation logic',
-            'Combined analytics with user-facing interfaces for practical tools',
-            'Focused on turning complex data into understandable insights'
+            'Built end-to-end applications across web, mobile, and desktop environments',
+            'Worked with NLP, analytics, API integration, and algorithmic problem solving',
+            'Combined backend logic with user-facing interfaces for practical tools',
+            'Focused on turning technical ideas into useful and understandable products'
         ]
     },
     {
@@ -503,7 +590,7 @@ function loadSkillsMatrix() {
     const container = document.getElementById('skills-matrix');
     container.innerHTML = '';
     
-    const skills = ['Python', 'NLP', 'React', 'Flutter', 'Pandas', 'Flask', 'Power BI', 'GitHub', 'APIs', 'AI'];
+    const skills = ['Python', 'Kotlin', 'Android', 'Node.js', 'TypeScript', 'SQLite', 'Firebase', 'React', 'APIs', 'AI'];
     
     skills.forEach((skill, index) => {
         const cell = document.createElement('div');
@@ -757,7 +844,7 @@ function initChatAssistant() {
         const responses = {
             leadership: "Ratan has contributed beyond coursework through ACM involvement and peer mentoring. He helped conduct Git, GitHub, HTML, CSS, and JavaScript workshops, supported juniors with development projects, and built a collaborative reputation through hands-on technical guidance.",
             technical: "Ratan's strongest areas include Python, JavaScript, React, Flutter, HTML, CSS, Flask, Pandas, NumPy, Power BI, and API integration. He is especially interested in building data-driven systems and AI applications that combine analysis, comparison logic, and useful user experiences.",
-            projects: "Ratan has built four standout portfolio projects: a GitHub profile analysis system, an NLP based resume matcher, an AI food nutrition analysis platform, and an AI travel planning agent. Together they show his ability to work across analytics, NLP, recommendation logic, and end-to-end product development.",
+            projects: "Ratan has built a diverse set of portfolio projects across AI, analytics, mobile apps, and full-stack development. His work includes a GitHub profile analysis system, resume matcher, food nutrition platform, travel planning agent, contract farming app, book marketplace, expense tracker, Sudoku solver, and an AQI dashboard.",
             roles: "Ratan is exploring internships and entry-level opportunities where he can apply AI, data analysis, Python development, and product-building skills. Strong-fit directions include data analyst, AI and ML focused developer, Python developer, and software roles involving intelligent systems."
         };
         
