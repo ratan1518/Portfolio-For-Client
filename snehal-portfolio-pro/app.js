@@ -2,278 +2,201 @@
 const projectsData = [
     {
         id: 1,
-        name: 'LP Bridge - GE Corporate',
-        company: 'Capgemini',
-        duration: 'Aug 2021 - Dec 2024',
-        category: 'enterprise',
+        name: 'AI GitHub Profile Analysis System',
+        company: 'Personal Project',
+        duration: '2026',
+        liveUrl: 'https://git-analyzer.streamlit.app/',
+        category: 'data',
         featured: true,
-        description: 'Leadership Programs Bridge facilitating operational management of leadership programs at General Electric across HR systems. Led team of 6 engineers, managing organizational rotations, work assignments, and graduations for GE Healthcare, Aerospace, and Vernova.',
-        detailedDescription: 'A comprehensive Spring-based application managing organizational rotations, work assignments, location transfers, and graduations for General Electric employees across multiple business units. Integrated with Workday, GMS, HR3 APIs, and Tableau through APIGEE Gateway.',
-        technologies: ['Spring MVC', 'Spring Cloud', 'Spring Security', 'Oracle SQL', 'Amazon RDS', 'REST APIs', 'SOAP', 'Tableau', 'APIGEE Gateway', 'Workday Integration'],
+        description: 'A data-driven system that analyzes GitHub repositories to uncover developer behavior, code quality signals, and repository health trends.',
+        detailedDescription: 'Built an interactive analysis app that studies repositories through code pattern analysis, commit sentiment, developer comparison, and project sustainability indicators. The system is designed to transform raw GitHub activity into meaningful insights about productivity and collaboration.',
+        technologies: ['Python', 'Streamlit', 'GitHub Data', 'NLP', 'Sentiment Analysis', 'Data Visualization'],
         achievements: [
-            'Led team of 6 junior software engineers',
-            'Improved user experience and business process effectiveness',
-            'Enhanced application features and optimized performance',
-            'Gathered requirements, conducted analysis, and managed releases',
-            'Reduced processing time by 40%',
-            'Improved system reliability from 95% to 99.5% uptime'
-        ],
-        teamSize: 6,
-        durationYears: 3.4
-    },
-    {
-        id: 2,
-        name: 'Cymmetri - Single Sign On',
-        company: 'Capgemini',
-        duration: 'Sep 2019 - Jul 2021',
-        category: 'enterprise',
-        description: 'Java-based framework for single sign-on portal integrating authentication between applications on multiple networks and cloud-based services.',
-        detailedDescription: 'Developed a comprehensive SSO framework using Java and Spring technologies to integrate authentication across multiple networks and cloud services, supporting SAML, OAuth, and custom API implementations.',
-        technologies: ['Java', 'SpringMVC', 'SpringJPA', 'JBoss Module Framework', 'SAML', 'OAuth', 'Microservices'],
-        achievements: [
-            'Integrated SAML, OAuth, and custom APIs',
-            'Implemented Social SSO services',
-            'Developed identity management connectors',
-            'Created microservice for Segregation of Duties',
-            'Reduced authentication failures by 60%',
-            'Supported 50+ integrated applications'
-        ],
-        teamSize: 4,
-        durationYears: 1.8
-    },
-    {
-        id: 3,
-        name: 'ECM Workflow System',
-        company: 'Capgemini',
-        duration: 'Jun 2018 - Aug 2019',
-        category: 'enterprise',
-        description: 'Enterprise Content Management Java Application managing document approval workflows and business processes for BSE India.',
-        detailedDescription: 'Complete ECM solution using Spring MVC and Activiti BPM engine for managing document approvals and business processes at BSE India, with custom MIS reporting and external system integrations.',
-        technologies: ['Java', 'Spring MVC', 'Activiti BPM', 'API Development', 'MIS Reporting'],
-        achievements: [
-            'Designed and developed workflows',
-            'Created MIS and Reports Management customizations',
-            'Developed API integrations',
-            'Managed complex business process automation',
-            'Processed 100,000+ documents annually'
-        ],
-        durationYears: 1.2
-    },
-    {
-        id: 4,
-        name: 'AMAZE - iMobile Analytics',
-        company: 'Capgemini',
-        duration: 'Dec 2017 - May 2018',
-        category: 'enterprise',
-        description: 'Analytics platform providing API layer over MongoDB sharded cluster for discovering trends on financial data for ICICI bank customers.',
-        technologies: ['Java', 'MongoDB', 'Sharded Clusters', 'API Design', 'Analytics'],
-        achievements: [
-            'Architected MongoDB layer',
-            'Designed advanced query aggregations',
-            'Defined API provisioning framework',
-            'Analyzed 1M+ financial transactions'
-        ],
-        durationYears: 0.4
-    },
-    {
-        id: 5,
-        name: 'Vulnerability and System Monitoring',
-        company: 'Unotech Software',
-        duration: 'Nov 2017 - Dec 2017',
-        category: 'opensource',
-        description: 'Security monitoring system integrating ELK stack, Fluentd, Nagios, and OCSNg for identifying vulnerabilities and aggregating system logs.',
-        technologies: ['ELK Stack', 'Golang', 'Fluentd', 'Nagios', 'Kibana'],
-        achievements: [
-            'Designed ELK stack integration architecture',
-            'Developed Golang vulnerability comparison application',
-            'Created security dashboards in Kibana',
-            'Identified 500+ critical vulnerabilities'
-        ],
-        durationYears: 0.1
-    },
-    {
-        id: 6,
-        name: 'Hydra - Middleware',
-        company: 'Unotech Software',
-        duration: 'Aug 2017 - Oct 2017',
-        category: 'opensource',
-        description: 'Golang-based middleware interfacing with multiple open-source applications including Service Desk, Rundeck, GLPI, and access control systems.',
-        technologies: ['Golang', 'JSON Configuration', 'API Design', 'Microservices'],
-        achievements: [
-            'Developed API handlers and routing system',
-            'Built Hydra-Monitor service',
-            'Implemented dynamic UI with JSON configuration'
-        ],
-        durationYears: 0.2
-    },
-    {
-        id: 7,
-        name: 'Food and Recipe Suggestion System',
-        company: 'D.Y. Patil University',
-        duration: 'Aug 2016 - Mar 2017',
-        category: 'academic',
-        description: 'Recommendation system to suggest recipes based on user preferences and health goals with allergic ingredient alerts.',
-        technologies: ['HTML5', 'CSS', 'PHP', 'JavaScript', 'MySQL'],
-        achievements: [
-            'Implemented content-based filtering',
-            'Solved cold-start problem',
-            'Developed nutrition checking algorithms'
+            'Implemented code DNA style analysis for repositories',
+            'Added commit sentiment analysis for collaboration insights',
+            'Created developer comparison workflows and repository health metrics',
+            'Published the project as a live portfolio application'
         ]
     },
     {
-        id: 8,
-        name: 'Online Songs Portal - Soul Strings',
-        company: 'D.Y. Patil University',
-        duration: 'Sep 2015 - Oct 2015',
-        category: 'academic',
-        description: 'Music portal enabling users to explore songs, albums, lyrics, and artist information.',
-        technologies: ['HTML5', 'JavaScript', 'CSS', 'PHP', 'MySQL']
+        id: 2,
+        name: 'Resume Matcher: NLP and ML Powered Resume Intelligence System',
+        company: 'Personal Project',
+        duration: '2026',
+        liveUrl: 'https://resume-analyzer-pro-brown.vercel.app/',
+        category: 'ai',
+        featured: true,
+        description: 'An NLP-based system for resume-job matching, candidate comparison, role prediction, and ATS-focused resume improvement.',
+        detailedDescription: 'Developed a resume intelligence platform that extracts skills, analyzes keyword relevance, identifies skill gaps, and predicts suitable roles. The product focuses on resume quality, ATS compatibility, and clearer comparison between candidates and job descriptions.',
+        technologies: ['Python', 'NLP', 'Machine Learning', 'Resume Parsing', 'Recommendation Logic', 'Vercel'],
+        achievements: [
+            'Built resume and job description comparison workflows',
+            'Generated skill gap analysis and personalized recommendations',
+            'Added role prediction and ATS-oriented improvement guidance',
+            'Designed the platform as a practical resume intelligence product'
+        ]
     },
     {
-        id: 9,
-        name: 'Multi-client Chat Application',
-        company: 'D.Y. Patil University',
-        duration: 'Mar 2015 - Apr 2015',
-        category: 'academic',
-        description: 'Real-time chat application supporting multiple simultaneous conversations with dynamic user management.',
-        technologies: ['Java', 'Socket Programming']
+        id: 3,
+        name: 'AI Food Nutrition Analysis Platform',
+        company: 'Personal Project',
+        duration: '2025',
+        liveUrl: 'https://ai-food-nutrition-anylsis-psyy.vercel.app/',
+        category: 'data',
+        description: 'A nutrition analysis system that evaluates meals and creates personalized health insights using BMI, BMR, and TDEE based calculations.',
+        detailedDescription: 'Created a health-focused analytics platform that examines calorie intake, macronutrient balance, and goal-based dietary needs. The application turns food data into personalized guidance that supports everyday wellness decisions.',
+        technologies: ['Python', 'Health Analytics', 'BMI', 'BMR', 'TDEE', 'Nutrition Modeling'],
+        achievements: [
+            'Implemented BMI, BMR, and TDEE based evaluation logic',
+            'Generated calorie and macronutrient analysis from meal inputs',
+            'Produced goal-based recommendations for healthier decisions',
+            'Focused the experience on practical and understandable insights'
+        ]
+    },
+    {
+        id: 4,
+        name: 'AI Travel Planning Agent',
+        company: 'Personal Project',
+        duration: '2025',
+        liveUrl: 'https://ai-travel-planner-onthego.streamlit.app/',
+        category: 'fullstack',
+        description: 'An AI-powered travel planning app that creates personalized multi-day itineraries based on budget, travel style, duration, companions, and interests.',
+        detailedDescription: 'Built a modular travel planning application using Python and Streamlit with LLM-powered structured outputs through OpenRouter. The system combines recommendation logic with external APIs for images, maps, hotels, and PDF export to deliver an end-to-end AI product experience.',
+        technologies: ['Python', 'Streamlit', 'OpenRouter', 'API Integration', 'Maps', 'PDF Export'],
+        achievements: [
+            'Generated personalized itineraries from multiple user inputs',
+            'Integrated LLM outputs with external image and travel data APIs',
+            'Added hotel suggestions, maps support, and PDF export',
+            'Showcased a modular and deployment-ready AI product workflow'
+        ]
     }
 ];
 
 const technicalSkills = [
-    { name: 'Java', proficiency: 95, years: 9 },
-    { name: 'Spring Framework', proficiency: 95, years: 8 },
-    { name: 'SQL', proficiency: 90, years: 8 },
-    { name: 'Spring Security', proficiency: 90, years: 6 },
-    { name: 'REST APIs', proficiency: 90, years: 7 },
-    { name: 'Spring Boot', proficiency: 85, years: 5 },
-    { name: 'Spring Cloud', proficiency: 85, years: 5 },
-    { name: 'Docker', proficiency: 85, years: 4 },
-    { name: 'Oracle Database', proficiency: 85, years: 6 },
-    { name: 'Microservices', proficiency: 85, years: 5 },
-    { name: 'Tableau', proficiency: 85, years: 4 },
-    { name: 'Git', proficiency: 85, years: 8 },
-    { name: 'Linux', proficiency: 85, years: 7 },
-    { name: 'AWS', proficiency: 80, years: 4 },
-    { name: 'MongoDB', proficiency: 80, years: 4 },
-    { name: 'SOAP', proficiency: 80, years: 5 },
-    { name: 'Power BI', proficiency: 80, years: 2 },
-    { name: 'Jenkins', proficiency: 80, years: 4 }
+    { name: 'Python', proficiency: 92, years: 3 },
+    { name: 'Java', proficiency: 74, years: 2 },
+    { name: 'JavaScript', proficiency: 85, years: 2 },
+    { name: 'React', proficiency: 82, years: 2 },
+    { name: 'Flutter', proficiency: 78, years: 1 },
+    { name: 'HTML5', proficiency: 88, years: 3 },
+    { name: 'CSS', proficiency: 86, years: 3 },
+    { name: 'Flask', proficiency: 76, years: 1 },
+    { name: 'Pandas', proficiency: 84, years: 2 },
+    { name: 'NumPy', proficiency: 80, years: 2 },
+    { name: 'Power BI', proficiency: 72, years: 1 },
+    { name: 'API Integration', proficiency: 82, years: 2 }
 ];
 
 const businessSkills = [
-    'Data Analysis',
-    'Business Intelligence',
-    'Process Optimization',
-    'Requirements Analysis',
-    'Stakeholder Management',
-    'Project Planning',
-    'Business Process Management',
-    'Risk Management',
-    'Performance Analysis'
+    'Data Processing',
+    'NLP Workflows',
+    'Problem Solving',
+    'Machine Learning Basics',
+    'Resume Intelligence',
+    'Developer Profiling',
+    'Health Data Evaluation',
+    'Comparison Modeling',
+    'Insight Generation'
 ];
 
 const leadershipSkills = [
-    { name: 'Team Leadership', proficiency: 95 },
-    { name: 'Communication', proficiency: 95 },
-    { name: 'Problem-solving', proficiency: 95 },
-    { name: 'Cross-functional Collaboration', proficiency: 95 },
-    { name: 'Strategic Planning', proficiency: 90 },
-    { name: 'Decision Making', proficiency: 90 },
-    { name: 'Emotional Intelligence', proficiency: 90 },
-    { name: 'Mentoring', proficiency: 85 },
-    { name: 'Conflict Resolution', proficiency: 85 },
-    { name: 'Enthusiasm & Drive', proficiency: 100 }
+    { name: 'Problem Solving', proficiency: 95 },
+    { name: 'Analytical Thinking', proficiency: 94 },
+    { name: 'Communication', proficiency: 88 },
+    { name: 'Mentoring', proficiency: 86 },
+    { name: 'Workshop Facilitation', proficiency: 84 },
+    { name: 'Collaboration', proficiency: 90 },
+    { name: 'Initiative', proficiency: 89 },
+    { name: 'Adaptability', proficiency: 87 },
+    { name: 'Peer Support', proficiency: 85 },
+    { name: 'Continuous Learning', proficiency: 97 }
 ];
 
 const certifications = [
-    { name: 'Certified SAFe\u00ae Practitioner', issuer: 'Scaled Agile, Inc.', date: 'Mar 2024 - Mar 2026', icon: '\ud83c\udfc6', category: 'leadership', status: 'Active' },
-    { name: 'AWS Certified Cloud Practitioner', issuer: 'Amazon Web Services', date: 'Sep 2023 - Sep 2026', icon: '\u2601\ufe0f', category: 'cloud', status: 'Active' },
-    { name: 'Professional Scrum Master\u2122 I', issuer: 'Scrum.org', date: 'May 2022', icon: '\ud83c\udfaf', category: 'leadership', status: 'Active' },
-    { name: 'Certified Connected Manager', issuer: 'Capgemini', date: 'Dec 2022', icon: '\u2699\ufe0f', category: 'leadership', status: 'Active' },
-    { name: 'Containerized Applications on AWS', issuer: 'Coursera', date: 'Oct 2023', icon: '\ud83d\udce6', category: 'cloud', status: 'Active' },
-    { name: 'Jenkins: Automating Delivery Pipeline', issuer: 'Coursera', date: 'May 2023', icon: '\ud83d\udd27', category: 'cloud', status: 'Active' },
-    { name: 'Agile Software Development', issuer: 'Coursera', date: 'Feb 2022', icon: '\ud83d\ude80', category: 'leadership', status: 'Active' },
-    { name: 'Post Graduate Diploma in Business Management', issuer: 'NMIMS CDO', date: 'Jul 2021', icon: '\ud83c\udf93', category: 'academic', status: 'Active' },
-    { name: 'Docker Hands On For Java Developers', issuer: 'Udemy', date: 'Mar 2021', icon: '\ud83d\udc33', category: 'cloud', status: 'Active' },
-    { name: 'AWS Partner: Sales Accreditation', issuer: 'Amazon Web Services', date: 'Aug 2022', icon: '\u2601\ufe0f', category: 'cloud', status: 'Active' },
-    { name: 'Migration Ambassador Foundations', issuer: 'Amazon Web Services', date: 'Aug 2022', icon: '\ud83d\udd04', category: 'cloud', status: 'Active' },
-    { name: 'Advanced Linux Networking', issuer: 'GNU Solutions & Services', date: 'Jan 2016', icon: '\ud83d\udc27', category: 'data', status: 'Active' }
+    { name: 'Android App Development', issuer: 'Training Program', date: 'Apr 2025', icon: 'APP', category: 'development', status: 'Completed' },
+    { name: 'Prompt Engineering Using AI Tools', issuer: 'be10x', date: 'Jun 2023 - Aug 2023', icon: 'AI', category: 'ai', status: 'Completed' },
+    { name: 'Flutter Workshop', issuer: 'Workshop Program', date: 'Jan 2024 - Feb 2025', icon: 'FL', category: 'mobile', status: 'Completed' },
+    { name: 'Git and GitHub Workshop', issuer: 'Workshop Program', date: 'Feb 2024 - Mar 2024', icon: 'GIT', category: 'tools', status: 'Completed' }
 ];
 
 const experienceData = [
     {
         id: 'exp1',
-        role: 'Business Analyst - College of Engineering Facilities',
-        company: 'University of Delaware',
-        duration: 'Mar 2025 - Present',
-        location: 'Delaware, United States',
-        category: 'leadership',
-        logo: 'U',
-        description: 'Currently contributing analytical expertise to optimize engineering facilities operations and support data-driven decision making.',
-        keyFocus: ['Data-driven decision making', 'Facilities operations optimization', 'Process improvement initiatives']
+        role: 'B.E. in Computer Engineering Student',
+        company: 'Don Bosco Institute of Technology',
+        duration: 'Aug 2023 - Present',
+        location: 'Mumbai, India',
+        category: 'technical',
+        logo: 'R',
+        description: 'Pursuing computer engineering with a growing focus on data-driven systems, intelligent applications, and product-oriented problem solving.',
+        keyFocus: [
+            'Python based data processing and analysis',
+            'NLP and intelligent comparison systems',
+            'Frontend and app development using React and Flutter'
+        ]
     },
     {
         id: 'exp2',
-        role: 'Manager',
-        company: 'Capgemini',
-        duration: 'Apr 2024 - Dec 2024',
-        location: 'Mumbai, Maharashtra, India',
+        role: 'Tech Team Member',
+        company: 'College ACM',
+        duration: 'Aug 2024 - Aug 2025',
+        location: 'Mumbai, India',
         category: 'leadership',
-        logo: 'C',
-        description: 'Led strategic initiatives and managed cross-functional teams at Capgemini.',
+        logo: 'A',
+        description: 'Contributed to technical community efforts and helped organize practical learning experiences for fellow students.',
         responsibilities: [
-            'Led strategic initiatives and managed cross-functional teams',
-            'Delivered enterprise-scale solutions for Fortune 500 clients',
-            'Drove process optimization and operational excellence',
-            'Mentored and developed team members across multiple projects'
+            'Supported ACM tech team initiatives and event execution',
+            'Helped conduct Git and GitHub workshops',
+            'Assisted with basic frontend workshops covering HTML, CSS, and JavaScript',
+            'Encouraged peer learning through hands-on technical support'
         ]
     },
     {
         id: 'exp3',
-        role: 'Senior Consultant',
-        company: 'Capgemini',
-        duration: 'Apr 2022 - Mar 2024',
-        location: 'Mumbai, Maharashtra, India',
+        role: 'AI Project Developer',
+        company: 'Personal Projects',
+        duration: '2024 - Present',
+        location: 'Mumbai, India',
         category: 'technical',
-        logo: 'C',
-        description: 'Led the development of LP Bridge for GE Corporate and managed technical teams.',
+        logo: 'P',
+        description: 'Designed and developed AI-centered portfolio projects spanning resume analysis, developer profiling, nutrition analytics, and travel planning.',
         responsibilities: [
-            'Led the development of LP Bridge for GE Corporate',
-            'Managed team of 6 junior software engineers',
-            'Architected solutions using Spring frameworks and AWS',
-            'Collaborated with stakeholders across GE Healthcare, Aerospace, and Vernova'
+            'Built end-to-end applications with Python and Streamlit',
+            'Worked with NLP, structured outputs, and recommendation logic',
+            'Combined analytics with user-facing interfaces for practical tools',
+            'Focused on turning complex data into understandable insights'
         ]
     },
     {
         id: 'exp4',
-        role: 'Consultant',
-        company: 'Capgemini',
-        duration: 'Jul 2021 - Mar 2022',
-        location: 'India',
-        category: 'technical',
-        logo: 'C',
-        description: 'Delivered technical solutions for enterprise clients.',
+        role: 'Peer Mentor',
+        company: 'Student Development Support',
+        duration: '2024 - Present',
+        location: 'Mumbai, India',
+        category: 'leadership',
+        logo: 'M',
+        description: 'Helped juniors with development projects and contributed to a collaborative learning environment.',
         responsibilities: [
-            'Delivered technical solutions for enterprise clients',
-            'Implemented Agile methodologies and best practices',
-            'Contributed to multiple high-priority projects'
+            'Guided juniors while they worked on development projects',
+            'Shared practical advice on implementation and debugging',
+            'Encouraged structured problem solving and cleaner execution',
+            'Supported peers through teamwork and technical discussion'
         ]
     },
     {
         id: 'exp5',
-        role: 'Java Developer',
-        company: 'Unotech Software Pvt. Ltd',
-        duration: 'Aug 2017 - Jul 2021',
+        role: 'Participant',
+        company: 'Smart India Hackathon',
+        duration: 'Aug 2024 - Oct 2024',
         location: 'India',
         category: 'technical',
-        logo: 'U',
-        description: 'Developed enterprise applications using Java and Spring frameworks.',
+        logo: 'S',
+        description: 'Participated in a competitive innovation environment centered on practical problem solving and product thinking.',
         responsibilities: [
-            'Developed enterprise applications using Java and Spring frameworks',
-            'Built Single Sign-On systems and identity management solutions',
-            'Created middleware applications in Golang',
-            'Implemented security monitoring and vulnerability assessment systems'
+            'Collaborated on solving real-world problems within a hackathon setting',
+            'Applied analytical thinking under time constraints',
+            'Contributed to ideation, planning, and solution development',
+            'Strengthened rapid prototyping and teamwork skills'
         ]
     }
 ];
@@ -421,7 +344,10 @@ function loadProjects() {
                 <div class="project-tech">
                     ${project.technologies.slice(0, 5).map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                 </div>
-                <button class="project-btn" data-id="${project.id}">View Details</button>
+                <div class="project-actions">
+                    <button class="project-btn" data-id="${project.id}">View Details</button>
+                    ${project.liveUrl ? `<a class="project-btn project-link-btn" href="${project.liveUrl}" target="_blank" rel="noopener noreferrer">Live Demo</a>` : ''}
+                </div>
             `;
             
             projectsDisplay.appendChild(card);
@@ -492,6 +418,11 @@ function showProjectModal(projectId) {
         <div class="project-tech" style="margin-top: 1rem;">
             ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
         </div>
+        ${project.liveUrl ? `
+            <div class="project-actions" style="margin-top: 1.5rem;">
+                <a class="project-btn project-link-btn" href="${project.liveUrl}" target="_blank" rel="noopener noreferrer">Open Live Project</a>
+            </div>
+        ` : ''}
     `;
     
     modal.classList.add('active');
@@ -518,7 +449,7 @@ function loadTechnicalSkills() {
     const container = document.getElementById('technical-skills');
     container.innerHTML = '';
     
-    technicalSkills.slice(0, 10).forEach((skill, index) => {
+    technicalSkills.forEach((skill, index) => {
         const skillBar = document.createElement('div');
         skillBar.className = 'skill-bar';
         skillBar.style.animationDelay = `${index * 0.05}s`;
@@ -572,7 +503,7 @@ function loadSkillsMatrix() {
     const container = document.getElementById('skills-matrix');
     container.innerHTML = '';
     
-    const skills = ['Java', 'Spring', 'AWS', 'SQL', 'Docker', 'APIs', 'Agile', 'Leadership', 'Analytics'];
+    const skills = ['Python', 'NLP', 'React', 'Flutter', 'Pandas', 'Flask', 'Power BI', 'GitHub', 'APIs', 'AI'];
     
     skills.forEach((skill, index) => {
         const cell = document.createElement('div');
@@ -726,7 +657,7 @@ function showExperienceDetail(exp) {
 
 // ===== EDUCATION COUNTDOWN =====
 function initCountdown() {
-    const graduationDate = new Date('2026-05-31T00:00:00');
+    const graduationDate = new Date('2027-05-31T00:00:00');
     
     function updateCountdown() {
         const now = new Date();
@@ -759,7 +690,7 @@ function initContactForm() {
     
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        alert('Thank you for your message! Snehal will get back to you soon.');
+        alert('Thank you for your message! Ratan will get back to you soon.');
         form.reset();
     });
     
@@ -771,16 +702,16 @@ function initContactForm() {
             
             switch(template) {
                 case 'collaboration':
-                    subjectInput.value = 'Collaboration Opportunity';
-                    messageInput.value = 'Hi Snehal, I\'d like to discuss a potential collaboration opportunity...';
+                    subjectInput.value = 'Project Collaboration';
+                    messageInput.value = 'Hi Ratan, I would like to discuss a project collaboration opportunity with you...';
                     break;
                 case 'consulting':
-                    subjectInput.value = 'Consulting Inquiry';
-                    messageInput.value = 'Hello Snehal, I have a consulting project that might interest you...';
+                    subjectInput.value = 'Internship Opportunity';
+                    messageInput.value = 'Hello Ratan, I would like to connect with you regarding an internship or project opportunity...';
                     break;
                 case 'speaking':
-                    subjectInput.value = 'Speaking Engagement';
-                    messageInput.value = 'Dear Snehal, We would love to have you speak at our event...';
+                    subjectInput.value = 'Workshop or Networking';
+                    messageInput.value = 'Hi Ratan, I would like to invite you for a workshop, session, or networking conversation...';
                     break;
             }
         });
@@ -814,7 +745,7 @@ function initChatAssistant() {
         message.className = `chat-message ${isBot ? 'bot' : 'user'}`;
         
         message.innerHTML = `
-            <div class="message-avatar">${isBot ? '\ud83e\udd16' : '\ud83d\udc64'}</div>
+            <div class="message-avatar">${isBot ? 'AI' : 'You'}</div>
             <div class="message-content">${text}</div>
         `;
         
@@ -824,13 +755,13 @@ function initChatAssistant() {
     
     function getResponse(question) {
         const responses = {
-            leadership: "Snehal is a natural leader with 9+ years of experience! She has successfully led teams of 30+ members at Capgemini, most notably managing a team of 6 junior software engineers on the LP Bridge project for GE Corporate. Her leadership certifications include Certified SAFe\u00ae Practitioner and Professional Scrum Master\u2122 I. She's known for her enthusiasm, strategic thinking, and ability to mentor team members while driving project success.",
-            technical: "Snehal is exceptionally technically sound with expertise spanning multiple domains! Her core strengths include Java (9 years), Spring Framework (8 years), SQL (8 years), and cloud technologies like AWS. She's proficient in Docker, Kubernetes, Oracle Database, MongoDB, and data visualization tools like Tableau and Power BI. She has hands-on experience with Microservices architecture, REST/SOAP APIs, and various DevOps tools. Her diverse technical background makes her versatile across enterprise solutions and data analytics.",
-            projects: "Snehal has delivered 15+ enterprise-scale projects! Her flagship project is LP Bridge for GE Corporate, a leadership programs management system serving GE Healthcare, Aerospace, and Vernova. She built Cymmetri, a Single Sign-On framework with OAuth and SAML integration. Other notable projects include an ECM Workflow System for BSE India, AMAZE analytics platform for ICICI Bank, and security monitoring systems using ELK Stack. She's worked on everything from enterprise Java applications to Golang middleware.",
-            roles: "Snehal is pursuing her MS in Business Analytics (Expected May 2026) and is interested in roles that combine her technical expertise with business analytics and leadership. Ideal positions include Business Analyst, Data Analyst, Technical Program Manager, or Solution Architect roles where she can leverage her 9+ years of enterprise experience, leadership capabilities, and growing analytics expertise. She's particularly interested in opportunities involving strategic decision-making, team leadership, and data-driven insights."
+            leadership: "Ratan has contributed beyond coursework through ACM involvement and peer mentoring. He helped conduct Git, GitHub, HTML, CSS, and JavaScript workshops, supported juniors with development projects, and built a collaborative reputation through hands-on technical guidance.",
+            technical: "Ratan's strongest areas include Python, JavaScript, React, Flutter, HTML, CSS, Flask, Pandas, NumPy, Power BI, and API integration. He is especially interested in building data-driven systems and AI applications that combine analysis, comparison logic, and useful user experiences.",
+            projects: "Ratan has built four standout portfolio projects: a GitHub profile analysis system, an NLP based resume matcher, an AI food nutrition analysis platform, and an AI travel planning agent. Together they show his ability to work across analytics, NLP, recommendation logic, and end-to-end product development.",
+            roles: "Ratan is exploring internships and entry-level opportunities where he can apply AI, data analysis, Python development, and product-building skills. Strong-fit directions include data analyst, AI and ML focused developer, Python developer, and software roles involving intelligent systems."
         };
         
-        return responses[question] || "That's a great question! Snehal is a highly accomplished professional with 9+ years of experience spanning software engineering, enterprise solutions, and business analytics. She's led teams of 30+ members, delivered 15+ projects, and holds 14+ certifications. Feel free to ask about her leadership experience, technical skills, projects, or career interests!";
+        return responses[question] || "Ratan is a computer engineering student focused on AI, analytics, and practical software products. Feel free to ask about his projects, technical strengths, certifications, ACM involvement, or the kinds of roles he is exploring.";
     }
     
     quickBtns.forEach(btn => {
