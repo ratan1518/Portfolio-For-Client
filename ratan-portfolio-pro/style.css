@@ -311,6 +311,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 *,
@@ -2808,6 +2809,18 @@ nav {
 }
 
 @media (max-width: 768px) {
+    #pages-container {
+        margin-top: 64px;
+    }
+
+    .page {
+        min-height: auto;
+    }
+
+    .nav-container {
+        padding: 0.85rem 1rem;
+    }
+
     .nav-links {
         position: fixed;
         top: 70px;
@@ -2821,26 +2834,101 @@ nav {
         transform: translateY(-100%);
         transition: transform 0.3s ease;
         border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        opacity: 0;
+        pointer-events: none;
+        z-index: 2500;
     }
     
     .nav-links.active {
         transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 0.85rem 1rem;
+        border-radius: 14px;
+        background: rgba(42, 47, 69, 0.45);
+        text-align: center;
     }
     
     .mobile-menu-toggle {
         display: flex;
     }
+
+    .hero-content {
+        padding: 1.5rem 1rem 3rem;
+    }
+
+    .hero-image-container {
+        width: 170px;
+        height: 170px;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-image {
+        font-size: 4rem;
+    }
     
     .title-line {
-        font-size: 2rem;
+        font-size: 2.3rem;
+        line-height: 1.15;
     }
     
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.05rem;
+        line-height: 1.5;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero-tagline {
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
     }
     
     .hero-stats {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .stat-item {
+        padding: 1rem 0.5rem;
+    }
+
+    .stat-number {
+        font-size: 2.35rem;
+    }
+
+    .stat-label {
+        font-size: 0.82rem;
+        line-height: 1.4;
+    }
+
+    .cta-button,
+    .project-btn,
+    .submit-btn {
+        min-height: 52px;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .page-title {
+        font-size: 2.35rem;
+        margin-bottom: 1.75rem;
+    }
+
+    #page-about,
+    #page-experience,
+    #page-projects,
+    #page-skills,
+    #page-certifications,
+    #page-education,
+    #page-contact {
+        padding: 2.5rem 1rem;
     }
     
     .personality-traits {
@@ -2854,14 +2942,149 @@ nav {
     .projects-grid.view-grid {
         grid-template-columns: 1fr;
     }
+
+    .projects-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .view-controls {
+        width: 100%;
+        overflow-x: auto;
+        padding: 0.35rem;
+    }
+
+    .view-btn {
+        flex: 1 0 auto;
+        min-width: 90px;
+    }
+
+    .project-filters,
+    .cert-categories {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+    }
+
+    .filter-btn,
+    .cert-cat-btn {
+        width: 100%;
+        min-height: 52px;
+        padding: 0.85rem 1rem;
+        border-radius: 18px;
+    }
+
+    .project-card,
+    .contact-form,
+    .contact-info-card,
+    .quick-templates,
+    .education-card,
+    .cert-card {
+        padding: 1.5rem;
+    }
+
+    .project-card h3 {
+        font-size: 1.7rem;
+        line-height: 1.25;
+    }
+
+    .project-tech {
+        gap: 0.5rem;
+    }
+
+    .project-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .project-actions .project-btn,
+    .project-actions .project-link-btn {
+        width: 100%;
+        justify-content: center;
+    }
     
     .cert-stats {
         grid-template-columns: 1fr;
     }
+
+    .skills-circular,
+    .academic-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-matrix {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-content,
+    .contact-item {
+        gap: 1rem;
+    }
+
+    .contact-item {
+        align-items: flex-start;
+    }
+
+    .chat-widget {
+        bottom: 16px;
+        right: 16px;
+    }
+
+    .chat-toggle {
+        width: 56px;
+        height: 56px;
+        font-size: 1.5rem;
+    }
     
     .chat-window {
-        width: calc(100vw - 40px);
-        right: -10px;
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        bottom: 84px;
+        width: auto;
+        height: min(68vh, 520px);
+        border-radius: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.45rem;
+    }
+
+    .title-line {
+        font-size: 2rem;
+    }
+
+    .hero-stats,
+    .project-filters,
+    .cert-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .project-card h3,
+    .education-card h3 {
+        font-size: 1.45rem;
+    }
+
+    .chat-window {
+        left: 8px;
+        right: 8px;
+        bottom: 78px;
+        height: 65vh;
+    }
+
+    .chat-header,
+    .chat-messages,
+    .quick-questions,
+    .chat-input-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
