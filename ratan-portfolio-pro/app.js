@@ -203,7 +203,8 @@ const certifications = [
     { name: 'Android App Development', issuer: 'Training Program', date: 'Apr 2025', icon: 'APP', category: 'development', status: 'Completed' },
     { name: 'Prompt Engineering Using AI Tools', issuer: 'be10x', date: 'Jun 2023 - Aug 2023', icon: 'AI', category: 'ai', status: 'Completed' },
     { name: 'Flutter Workshop', issuer: 'Workshop Program', date: 'Jan 2024 - Feb 2025', icon: 'FL', category: 'mobile', status: 'Completed' },
-    { name: 'Git and GitHub Workshop', issuer: 'Workshop Program', date: 'Feb 2024 - Mar 2024', icon: 'GIT', category: 'tools', status: 'Completed' }
+    { name: 'Git and GitHub Workshop', issuer: 'Workshop Program', date: 'Feb 2024 - Mar 2024', icon: 'GIT', category: 'tools', status: 'Completed' },
+    { name: 'Google Cloud Study Jam', issuer: 'GDGC DBIT', date: 'Sep 2025 - Oct 2025', icon: 'GCP', category: 'development', status: 'Completed' }
 ];
 
 const experienceData = [
