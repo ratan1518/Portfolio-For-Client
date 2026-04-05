@@ -2284,14 +2284,14 @@ nav {
     font-size: 1.1rem;
 }
 
-.countdown {
+.academic-highlights {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin-top: 2rem;
 }
 
-.countdown-item {
+.academic-highlight-item {
     text-align: center;
     padding: 1rem;
     background: rgba(94, 74, 171, 0.2);
@@ -2299,15 +2299,15 @@ nav {
     border-radius: 15px;
 }
 
-.countdown-value {
+.academic-highlight-value {
     display: block;
-    font-size: 2rem;
+    font-size: 1.35rem;
     font-weight: 700;
     color: var(--gold);
     font-family: 'Space Grotesk', sans-serif;
 }
 
-.countdown-label {
+.academic-highlight-label {
     display: block;
     color: var(--gray);
     font-size: 0.85rem;
